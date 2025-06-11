@@ -14,3 +14,6 @@ app.listen(port, () => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 require("dotenv").config();
+
+
+require('./src/routes/auth.routes')(app);
